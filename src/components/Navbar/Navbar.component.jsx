@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom'
 import { MdMenu, MdClose } from "react-icons/md";
 import './Navbar.styles.css'
 
-
 const Navbar = () => {
   const [menu, setShowMenu] = useState(false)
 
@@ -13,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-        <p className="logo">dev<span className='dev-name'>julian</span></p>
+        <p className="logo">dev<span className='logo-name'>julian</span></p>
 
           {menu ?  <MdClose onClick={showMenu}  className="icon" size="40" /> : <MdMenu  onClick={showMenu} className="icon" size="40"/> }
           <ul className={menu ? "navlist show" : "navlist"}>

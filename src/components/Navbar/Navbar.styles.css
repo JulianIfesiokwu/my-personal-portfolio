@@ -1,9 +1,12 @@
 .navbar {
+  position: fixed;
+  width: 100%;
+  background-color: aqua;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin: 0 auto;
+  padding: 1rem 4rem;
+  top: 0;
 }
 
 .logo {
@@ -22,7 +25,7 @@
 
 @media only screen and (max-width: 660px) {
   .navbar {
-    width: 90%;
+    padding: 0.5rem 1rem;
   }
 
   .icon {
@@ -43,7 +46,7 @@
   .navlist.show {
     display: flex;
     position: fixed;
-    top: 1.75rem;
+    top: 3.5rem;
     left: 0;
     z-index: 5;
     background-color: red;
