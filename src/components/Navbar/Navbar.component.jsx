@@ -13,16 +13,15 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-        <p className="logo">JulianIfesiokwu</p>
+        <p className="logo">dev<span className='dev-name'>julian</span></p>
 
-        <div className="navigation">
           {menu ?  <MdClose onClick={showMenu}  className="icon" size="40" /> : <MdMenu  onClick={showMenu} className="icon" size="40"/> }
-          <ul className={menu ? "navlist active" : "navlist"}>
-              <NavLink to="/" className="nav-item"><span className="index">01.</span> About</NavLink>
-              <NavLink to="/" className="nav-item"><span className="index">02.</span> Projects</NavLink>
-              <NavLink to="/" className="nav-item"><span className="index">03.</span> Contact</NavLink>
+          <ul className={menu ? "navlist show" : "navlist"}>
+              <NavLink to="/" className="nav-item"><span className="index">01.</span> Home</NavLink>
+              <NavLink to="/" className="nav-item"><span className="index">02.</span> About</NavLink>
+              <NavLink to="/" className="nav-item"><span className="index">03.</span> Projects</NavLink>
+              <NavLink to="/" className="nav-item"><span className="index">04.</span> Contact</NavLink>
           </ul>
-        </div>
     </div>
   )
 }
