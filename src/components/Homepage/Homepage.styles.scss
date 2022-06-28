@@ -1,0 +1,78 @@
+.homepage {
+    padding: 1rem 4rem;
+    margin-top: 3rem;
+}
+
+.landing {
+    margin-top: 4rem;
+    height: 80vh;
+}
+
+.introduction {
+    margin-top: 1rem;
+    font-size: 3.5rem;
+}
+
+.row {
+    display: block;
+}
+
+.dev-name, .dev-title {
+    color: red;
+    font-size: 4.5rem;
+}
+
+.dev-title {
+    background-color: skyblue;
+}
+
+.skills {
+    margin-top: 2rem;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.skills-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.sample-projects {
+    margin-top: 2rem;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+@media only screen and (max-width: 660px) {
+    .homepage {
+        padding: 0.5rem 1rem;
+        margin-top: 3rem;
+    }
+
+    .introduction {
+        font-size: 2.5rem;
+    }
+
+    .dev-name,
+    .dev-title {
+        color: red;
+        font-size: 3.5rem;
+    }
+
+    .skills {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .skills-img {
+        margin: 2rem 0;
+    }
+
+}
