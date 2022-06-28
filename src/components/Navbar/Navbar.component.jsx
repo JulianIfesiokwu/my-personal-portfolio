@@ -19,7 +19,7 @@ const Navbar = () => {
               <NavLink to="/" className="nav-item"><span className="index">01.</span> Home</NavLink>
               <NavLink to="/" className="nav-item"><span className="index">02.</span> About</NavLink>
               <NavLink to="/" className="nav-item"><span className="index">03.</span> Projects</NavLink>
-              <NavLink to="/" className="nav-item"><span className="index">04.</span> Contact</NavLink>
+              <NavLink to="/contact" className="nav-item"><span className="index">04.</span> Contact</NavLink>
           </ul>
     </div>
   )
