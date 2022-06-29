@@ -24,6 +24,12 @@
     margin-top: 1rem;
 }
 
+.social-links {
+    color: var(--text-color);
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
 .message-form {
     width: 50%;
     display: flex;
@@ -42,13 +48,15 @@
 
 .email-label,
 .name-label,
-.message {
+.message-label {
     display: block;
     margin-top: 1rem;
+    color: var(--text-color);
 }
 
 .client-name,
-.client-email {
+.client-email,
+.message {
     width: 100%;
     margin-top: 0.5rem;
     padding: 0.5rem;

@@ -3,6 +3,7 @@ import { useState } from "react";
 import SharedLayout from "./components/SharedLayout/SharedLayout.component";
 import Homepage from "./components/Homepage/Homepage.component";
 import ContactPage from "./components/ContactPage/ContactPage.component";
+import ErrorPage from "./components/Error/ErrorPage.component";
 
 import "./App.css";
 
@@ -28,6 +29,7 @@ function App() {
         >
           <Route index element={<Homepage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

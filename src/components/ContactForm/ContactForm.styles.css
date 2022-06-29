@@ -13,6 +13,21 @@
 .contact-title {
   margin-bottom: 1rem;
   font-size: 2rem;
+  color: var(--text-color);
+}
+
+.contact-brief {
+  color: var(--text-color);
+}
+
+.social {
+  margin-top: 1rem;
+}
+
+.social-links {
+  color: var(--text-color);
+  cursor: pointer;
+  margin-right: 1rem;
 }
 
 .message-form {
@@ -33,13 +48,15 @@
 
 .email-label,
 .name-label,
-.message {
+.message-label {
   display: block;
   margin-top: 1rem;
+  color: var(--text-color);
 }
 
 .client-name,
-.client-email {
+.client-email,
+.message {
   width: 100%;
   margin-top: 0.5rem;
   padding: 0.5rem;

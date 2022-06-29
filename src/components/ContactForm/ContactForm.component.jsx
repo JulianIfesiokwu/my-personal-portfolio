@@ -18,9 +18,9 @@ const ContactForm = () => {
                     <h2 className='contact-title'>Let's get in touch.</h2>
                     <p className="contact-brief">Either by email or through social media.</p>
                     <div className="social">
-                        <Link to='/'><FaGithub size='30' /></Link>
-                        <Link to='/'><FaLinkedin size='30' /></Link>
-                        <Link to='/'><SiFrontendmentor size='30' /></Link>
+                        <Link to='/'><FaGithub size='30' className="social-links" /></Link>
+                        <Link to='/'><FaLinkedin size='30' className="social-links" /></Link>
+                        <Link to='/'><SiFrontendmentor size='30' className="social-links" /></Link>
                     </div>
                 </article>
                 <form className="message-form" onSubmit={handleSubmit(onSubmit)}>
@@ -37,7 +37,8 @@ const ContactForm = () => {
                         </div>
                     </div>
                     <div className="message-container">
-                        <textarea name="" id="" className='message' placeholder="Your message here" {...register("clientMessage", {required: "Enter your message"})}></textarea>
+                        <label htmlFor="" className="message-label">Your message</label>
+                        <textarea name="" id="message-label" className='message' placeholder="Your message here" {...register("clientMessage", {required: "Enter your message"})}></textarea>
                         {errors.clientMessage && <span className="error-message">{errors.clientMessage.message}</span>}
                     </div>
                     <Button title={`Contact me!`}/>

@@ -1,0 +1,14 @@
+.error-page {
+  margin-top: 3rem;
+  text-align: center;
+  background-color: var(--background-color);
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-title {
+  color: var(--text-color);
+}/*# sourceMappingURL=ErrorPage.styles.css.map */

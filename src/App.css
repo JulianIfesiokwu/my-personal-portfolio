@@ -22,4 +22,8 @@ body .light {
   --background-color: hsl(236, 33%, 92%);
   --todoBackground-color: hsl(0, 0%, 98%);
   --text-color: hsl(235, 19%, 35%);
+}
+
+.icon {
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */
