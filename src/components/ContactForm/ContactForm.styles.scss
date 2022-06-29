@@ -3,6 +3,7 @@
     display: flex;
     flex: 1;
     align-items: center;
+    background-color: var(--background-color);
 }
 
 .contact-info {
@@ -12,6 +13,15 @@
 .contact-title {
     margin-bottom: 1rem;
     font-size: 2rem;
+    color: var(--text-color);
+}
+
+.contact-brief {
+    color: var(--text-color);
+}
+
+.social {
+    margin-top: 1rem;
 }
 
 .message-form {

@@ -26,8 +26,8 @@ const Homepage = () => {
             <section className="sample-projects">
                 <article className="sample-info">
                     <h2 className="skills-title"><span>Featured</span> Projects</h2>
-                    <p>View some of my featured projects or better yet, view all my projects.</p>
-                    <Button title={'view all projects'}></Button>
+                    <p className='skills-info'>View some of my featured projects.</p>
+                    <Button title={'more projects'}></Button>
                 </article>
                 <article className="fav-projects"></article>
             </section>

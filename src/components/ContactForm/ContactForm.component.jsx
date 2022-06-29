@@ -16,7 +16,7 @@ const ContactForm = () => {
             <section className="contact-form">
                 <article className="contact-info">
                     <h2 className='contact-title'>Let's get in touch.</h2>
-                    <p>Either by email or through social media.</p>
+                    <p className="contact-brief">Either by email or through social media.</p>
                     <div className="social">
                         <Link to='/'><FaGithub size='30' /></Link>
                         <Link to='/'><FaLinkedin size='30' /></Link>

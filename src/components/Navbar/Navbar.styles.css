@@ -1,7 +1,7 @@
 .navbar {
   position: fixed;
   width: 100%;
-  background-color: aqua;
+  background-color: var(--background-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,6 +11,7 @@
 
 .logo {
   display: inline-block;
+  color: var(--text-color);
 }
 
 .icon {
@@ -18,9 +19,14 @@
   display: none;
 }
 
+.theme-color {
+  color: var(--text-color);
+}
+
 .nav-item {
   margin-left: 2rem;
   text-decoration: none;
+  color: var(--text-color);
 }
 
 @media only screen and (max-width: 660px) {
@@ -62,6 +68,6 @@
     font-weight: 600;
     font-size: 1.25rem;
     text-align: center;
-    color: white;
+    color: var(--text-color);
   }
 }/*# sourceMappingURL=Navbar.styles.css.map */
