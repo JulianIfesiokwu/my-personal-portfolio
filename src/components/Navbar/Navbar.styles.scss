@@ -1,74 +1,82 @@
- .navbar {
-    position: fixed;
-    width: 100%;
-    background-color: var(--background-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 4rem;
-    top: 0;
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  top: 0;
+  box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
+  -webkit-box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
+  -moz-box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
 }
 
 .logo {
-    display: inline-block;
-    color: var(--text-color);
+  display: inline-block;
+  color: var(--text-color);
+  cursor: pointer;
 }
 
-.icon {
-    vertical-align: middle;
-    display: none;
+.menu {
+  vertical-align: middle;
+  display: none;
 }
 
 .theme-color {
-    color: var(--text-color)
+  color: var(--text-color);
+}
+
+.icon {
+  cursor: pointer;
 }
 
 .nav-item {
-    margin-left: 2rem;
-    text-decoration: none;
-    color: var(--text-color);
+  margin-left: 2rem;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 // Media query under 600px
 @media only screen and (max-width: 660px) {
-    .navbar {
-        padding: 0.5rem 1rem;
-    }
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
 
-    .icon {
-        display: block;
-    }
+  .menu {
+    display: block;
+  }
 
-    .navlist {
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        width: 0;
-        background-color: var(--background-color);
-        transition: max-height 2s;
-        padding: 0;
-        text-align: center;
-        height: 0;
+  .navlist {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 0;
+    background-color: var(--background-color);
+    transition: max-height 2s;
+    padding: 0;
+    text-align: center;
+    height: 0;
 
-        &.show {
-            display: flex;
-            position: fixed;
-            top: 3.5rem;
-            left: 0;
-            z-index: 5;
-            width: 100%;
-            height: 100vh;        
-        }
+    &.show {
+      display: flex;
+      position: fixed;
+      top: 3.5rem;
+      left: 0;
+      z-index: 5;
+      width: 100%;
+      height: 100vh;
     }
+  }
 
-    .nav-item {
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        margin: 0 auto;
-        margin-bottom: 3rem;
-        font-weight: 600;
-        font-size: 1.25rem;
-        text-align: center;
-        color: var(--text-color);
-    }
+  .nav-item {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--text-color);
+  }
 }
