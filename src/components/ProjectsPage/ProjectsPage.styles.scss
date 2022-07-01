@@ -1,5 +1,51 @@
 .projects-page {
-    margin-top: 3rem;
-    background-color: var(--background-color);
-    padding: 1rem 4rem;
+  margin-top: 3rem;
+  background-color: var(--background-color);
+  padding: 1rem 4rem;
+}
+
+.projects-container {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex: 1;
+  gap: 1%;
+}
+
+.projects-filters {
+  text-align: center;
+}
+
+.filter-title {
+  margin-top: 1rem;
+  color: var(--text-color);
+}
+
+.filter-buttons {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.active {
+  background-color: red;
+  color: white;
+}
+
+.filter-btn {
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 660px) {
+  .projects-page {
+    padding: 0.5rem 1rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
 }
