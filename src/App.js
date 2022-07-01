@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ScrollToTop from "./components/ScrollToTop.component";
 import SharedLayout from "./components/SharedLayout/SharedLayout.component";
 import Homepage from "./components/Homepage/Homepage.component";
+import AboutPage from "./components/AboutPage/AboutPage.component";
 import ContactPage from "./components/ContactPage/ContactPage.component";
 import ProjectsPage from "./components/ProjectsPage/ProjectsPage.component";
 import ErrorPage from "./components/Error/ErrorPage.component";
@@ -31,6 +32,7 @@ function App() {
           }
         >
           <Route index element={<Homepage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<ErrorPage />} />

@@ -1,29 +1,34 @@
 body {
-    width: 100%;
+  width: 100%;
 }
 
-*, 
+*,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body .dark {
-    --accent-color: hsl(220, 98%, 61%);
-    --background-color: hsl(235, 21%, 11%);
-    --todoBackground-color: hsl(237, 14%, 26%);
-    --text-color: hsl(234, 39%, 85%);
+  --accent-color: hsl(220, 98%, 61%);
+  --background-color: hsl(235, 21%, 11%);
+  --todoBackground-color: hsl(237, 14%, 26%);
+  --text-color: hsl(234, 39%, 85%);
 }
 
 body .light {
-    --accent-color: hsl(220, 98%, 61%);
-    --background-color: hsl(236, 33%, 92%);
-    --todoBackground-color: hsl(0, 0%, 98%);
-    --text-color: hsl(235, 19%, 35%);
+  --accent-color: hsl(220, 98%, 61%);
+  --background-color: hsl(236, 33%, 92%);
+  --todoBackground-color: hsl(0, 0%, 98%);
+  --text-color: hsl(235, 19%, 35%);
 }
 
-.icon {
-    cursor: pointer;
+a {
+  text-decoration: none;
+  color: var(--text-color);
 }
