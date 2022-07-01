@@ -1,88 +1,93 @@
 .homepage {
-    padding: 1rem 4rem;
-    margin-top: 3rem;
-    background-color: var(--background-color);
+  padding: 1rem 4rem;
+  margin-top: 3rem;
+  background-color: var(--background-color);
 }
 
 .landing {
-    margin-top: 4rem;
-    height: 80vh;
+  margin-top: 4rem;
+  height: 80vh;
 }
 
 .introduction {
-    margin-top: 1rem;
-    font-size: 3.5rem;
-    color: var(--text-color);
+  margin-top: 1rem;
+  font-size: 3.5rem;
+  color: var(--text-color);
 }
 
-.intro-paragraph {color: var(--text-color);}
+.intro-paragraph {
+  color: var(--text-color);
+}
 
 .row {
-    display: block;
+  display: block;
 }
 
-.dev-name, .dev-title {
-    color: red;
-    font-size: 4.5rem;
-
+.dev-name,
+.dev-title {
+  color: red;
+  font-size: 4.5rem;
 }
 
 .dev-title {
-    background-color: skyblue;
+  background-color: skyblue;
 }
 
 .skills {
-    margin-top: 2rem;
-    display: flex;
-    flex: 1;
-    align-items: center;
+  margin-top: 2rem;
+  display: flex;
+  flex: 1;
+  align-items: center;
 }
 
 .skills-title {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--text-color);
 }
 
 .skills-info {
-    color: var(--text-color);
-}
-
-img {
-    width: 100%;
-    height: auto;
+  color: var(--text-color);
 }
 
 .sample-projects {
-    margin-top: 2rem;
-    display: flex;
-    flex: 1;
-    align-items: center;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 660px) {
-    .homepage {
-        padding: 0.5rem 1rem;
-        margin-top: 3rem;
-    }
+  .homepage {
+    padding: 0.5rem 1rem;
+    margin-top: 3rem;
+  }
 
-    .introduction {
-        font-size: 2.5rem;
-    }
+  .introduction {
+    font-size: 2.5rem;
+  }
 
-    .dev-name,
-    .dev-title {
-        color: red;
-        font-size: 3.5rem;
-    }
+  .dev-name,
+  .dev-title {
+    color: red;
+    font-size: 3.5rem;
+  }
 
-    .skills {
-        margin-top: 2rem;
-        flex-direction: column;
-    }
+  .skills {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
 
-    .skills-img {
-        margin: 2rem 0;
-    }
+  .skills-img {
+    margin: 2rem 0;
+  }
 
+  .sample-projects {
+    flex-direction: column;
+  }
+
+  .sample-info {
+    width: 100%;
+  }
 }
