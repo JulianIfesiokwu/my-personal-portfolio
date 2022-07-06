@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ScrollToTop from "./components/ScrollToTop.component";
 import SharedLayout from "./components/SharedLayout/SharedLayout.component";
 import Homepage from "./components/Homepage/Homepage.component";
