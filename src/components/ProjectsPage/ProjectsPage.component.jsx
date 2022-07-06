@@ -39,7 +39,7 @@ const ProjectsPage = () => {
               <button
                 key={index}
                 className={
-                  active === filter ? "active filter-btn" : "filter-btn"
+                  active === filter ? "selected filter-btn" : "filter-btn"
                 }
                 onClick={() => filterProjects({ filter })}
               >

@@ -1,6 +1,7 @@
 .projects-card {
   width: 23%;
   flex-direction: column;
+  align-content: space-between;
   justify-content: space-between;
   background-color: white;
   margin-bottom: 2rem;
@@ -17,14 +18,15 @@
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .project-name {
   color: var(--text-color);
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
 }
 
 .pill {
@@ -36,11 +38,14 @@
   padding: 0.125rem 0.75rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+  font-family: var(--font-heading);
 }
 
 .project-description {
   color: var(--text-color);
   font-size: 0.8rem;
+  font-family: var(--font-article);
+  margin: 1rem 0;
 }
 
 .project-links {
