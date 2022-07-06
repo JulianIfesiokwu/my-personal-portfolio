@@ -2,6 +2,7 @@
   padding: 0.75rem 1.5rem;
   font-size: 0.9rem;
   margin-top: 1rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--text-color);
+  font-family: var(--font-article);
 }/*# sourceMappingURL=Button.styles.css.map */

@@ -32,8 +32,8 @@ export const projects = [
       "A fictional website project where users can schedule, buy and pay for a service online.",
     image:
       "https://github.com/JulianIfesiokwu/Health-Wellness-website/raw/main/src/assets/images/Health&Wellness-Website.png",
-    live: "https://audiophile-ecommerce-website-coral.vercel.app/",
-    source: "https://github.com/JulianIfesiokwu/audiophile-ecommerce-website",
+    live: "https://health-wellness-website.vercel.app/",
+    source: "https://github.com/JulianIfesiokwu/Health-Wellness-website",
   },
   {
     name: "Simple Calculator",
@@ -62,12 +62,12 @@ export const projects = [
       "React",
       "Styled Components",
       "React-Router",
-      "React-Hook-Form",
+      "React Form Hook",
       "React-Icons",
       "React-Modal",
     ],
     description:
-      "An responsive ecommerce site created using React, Styled Components, React-Router, and accessing data from Fake Store API.",
+      "A responsive ecommerce site created using React, Styled Components, React-Router, and accessing data from Fake Store API.",
     image:
       "https://github.com/JulianIfesiokwu/shoppers-fun/raw/main/src/assets/Shoppers-Fun-Website.png",
     live: "https://shoppers-fun.vercel.app/",
@@ -93,7 +93,8 @@ export const projects = [
       "Framer Motion",
       "SASS",
     ],
-    image: "",
+    image:
+      "https://github.com/JulianIfesiokwu/Designo-multi-page-website/raw/main/assets/Designo-Website.png",
     description: "Personal portfolio website",
     live: "https://audiophile-ecommerce-website-coral.vercel.app/",
     source: "https://github.com/JulianIfesiokwu/my-personal-portfolio",
