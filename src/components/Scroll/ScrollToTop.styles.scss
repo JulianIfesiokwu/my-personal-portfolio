@@ -1,0 +1,21 @@
+.top-button {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  padding: 0.25rem;
+  background-color: blue;
+
+  &.hide {
+    display: none;
+  }
+}
+
+.top-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 660px) {
+  .top-button {
+    right: 1rem;
+  }
+}
