@@ -10,6 +10,8 @@
   box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
   -webkit-box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
   -moz-box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
+  font-family: var(--font-heading);
+  font-weight: 500;
 }
 
 .logo {
@@ -35,6 +37,11 @@
   margin-left: 2rem;
   text-decoration: none;
   color: var(--text-color);
+}
+
+.active {
+  font-weight: 700;
+  font-size: 1.125rem;
 }
 
 // Media query under 600px
@@ -78,5 +85,11 @@
     font-size: 1.25rem;
     text-align: center;
     color: var(--text-color);
+    width: 100%;
+  }
+
+  .active {
+    background-color: red;
+    padding: 1rem 0;
   }
 }

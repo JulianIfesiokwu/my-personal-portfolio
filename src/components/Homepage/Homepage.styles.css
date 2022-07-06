@@ -13,10 +13,13 @@
   margin-top: 1rem;
   font-size: 3.5rem;
   color: var(--text-color);
+  font-family: var(--font-heading);
 }
 
 .intro-paragraph {
   color: var(--text-color);
+  font-family: var(--font-article);
+  margin-top: 1rem;
 }
 
 .row {
@@ -44,10 +47,12 @@
   margin-bottom: 1rem;
   font-size: 2rem;
   color: var(--text-color);
+  font-family: var(--font-heading);
 }
 
 .skills-info {
   color: var(--text-color);
+  font-family: var(--font-article);
 }
 
 .sample-projects {
