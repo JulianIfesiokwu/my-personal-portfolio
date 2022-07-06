@@ -1,110 +1,113 @@
 .contact-form {
-    margin-top: 2rem;
-    display: flex;
-    flex: 1;
-    align-items: center;
-    background-color: var(--background-color);
+  margin-top: 2rem;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  background-color: var(--background-color);
 }
 
 .contact-info {
-    width: 50%;
+  width: 50%;
 }
 
 .contact-title {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  font-family: var(--font-heading);
 }
 
 .contact-brief {
-    color: var(--text-color);
+  color: var(--text-color);
+  font-family: var(--font-article);
 }
 
 .social {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .social-links {
-    color: var(--text-color);
-    cursor: pointer;
-    margin-right: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-right: 1rem;
 }
 
 .message-form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .details {
-    display: flex;
-    gap: 2%;
+  display: flex;
+  gap: 2%;
 }
 
 .details-input {
-    display: inline;
-    width: 50%;
+  display: inline;
+  width: 50%;
 }
 
 .email-label,
 .name-label,
 .message-label {
-    display: block;
-    margin-top: 1rem;
-    color: var(--text-color);
+  display: block;
+  margin-top: 1rem;
+  color: var(--text-color);
+  font-family: var(--font-heading);
 }
 
 .client-name,
 .client-email,
 .message {
-    width: 100%;
-    margin-top: 0.5rem;
-    padding: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
 }
 
 .error-message {
-    margin-bottom: 0.5rem;
-    color: red;
-    font-size: 0.8rem;
-    display: block;
+  margin-bottom: 0.5rem;
+  color: red;
+  font-size: 0.8rem;
+  display: block;
 }
 
 .message {
-    width: 100%;
-    height: 20vh;
-    padding: 0.5rem;
+  width: 100%;
+  height: 20vh;
+  padding: 0.5rem;
 }
 
 @media only screen and (max-width: 660px) {
-    .contact-form {
-        flex-direction: column;
-    }
-    
-    .details {
-        flex-direction: column;
-    }
+  .contact-form {
+    flex-direction: column;
+  }
 
-    .details-input {
-        width: 100%;
-    }
-    
-    .message-form,
-    .contact-info {
-        width: 100%;
-    }
+  .details {
+    flex-direction: column;
+  }
 
-    .contact-info {
-        margin-bottom: 2rem;
-    }
-    
-    .email-label,
-    .name-label,
-    .message {
-        display: block;
-    }
+  .details-input {
+    width: 100%;
+  }
 
-    .client-email,
-    .client-name {
-        display: block;
-    }
+  .message-form,
+  .contact-info {
+    width: 100%;
+  }
+
+  .contact-info {
+    margin-bottom: 2rem;
+  }
+
+  .email-label,
+  .name-label,
+  .message {
+    display: block;
+  }
+
+  .client-email,
+  .client-name {
+    display: block;
+  }
 }
