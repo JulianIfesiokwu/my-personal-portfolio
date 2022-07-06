@@ -11,10 +11,13 @@
 
 .project-title {
   color: var(--text-color);
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
 }
 
 .about-project {
   color: var(--text-color);
+  font-family: var(--font-article);
 }
 
 .img-container {
