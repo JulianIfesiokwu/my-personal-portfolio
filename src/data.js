@@ -1,22 +1,30 @@
 export const projects = [
   {
-    name: "Audiophile-ecommerce-website",
-    technologies: ["React", "SASS", "React-Router"],
-    description: "An ecommerce website built using react",
+    name: "Audiophile Website",
+    technologies: ["React", "SASS", "React-Router", "React-Modal"],
+    description:
+      "Responsive ecommerce website with cart functionality, form validation, routing and a modal shown on completion of purchase.",
     image:
       "https://github.com/JulianIfesiokwu/audiophile-ecommerce-website/raw/main/src/assets/Audiophile-Website.png",
     live: "https://audiophile-ecommerce-website-coral.vercel.app/",
     source: "https://github.com/JulianIfesiokwu/audiophile-ecommerce-website",
   },
   {
-    name: "Blogr-Landing-Page",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    name: "Shoppers E-commerce Website",
+    technologies: [
+      "React",
+      "Styled Components",
+      "React-Router",
+      "React Form Hook",
+      "React-Icons",
+      "React-Modal",
+    ],
     description:
-      "A landing page for a fictional website. Frontend Mentor Challenge using HTML,CSS & JS.",
+      "Responsive ecommerce site with cart functionality, modal, dynamic routing and fetching data from Fake Store API.",
     image:
-      "https://github.com/JulianIfesiokwu/Blogr-Landing-Page/raw/main/assets/Blogr-Landing-Page.png",
-    live: "https://julianifesiokwu.github.io/Blogr-Landing-Page/",
-    source: "https://github.com/JulianIfesiokwu/Blogr-Landing-Page",
+      "https://github.com/JulianIfesiokwu/shoppers-fun/raw/main/src/assets/Shoppers-Fun-Website.png",
+    live: "https://shoppers-fun.vercel.app/",
+    source: "https://github.com/JulianIfesiokwu/shoppers-fun",
   },
   {
     name: "Health & Wellness Website",
@@ -29,11 +37,38 @@ export const projects = [
       "React-Router",
     ],
     description:
-      "A fictional website project where users can schedule, buy and pay for a service online.",
+      "Responsive e-commerce website where users can schedule, buy and pay for a service online.",
     image:
       "https://github.com/JulianIfesiokwu/Health-Wellness-website/raw/main/src/assets/images/Health&Wellness-Website.png",
     live: "https://health-wellness-website.vercel.app/",
     source: "https://github.com/JulianIfesiokwu/Health-Wellness-website",
+  },
+  {
+    name: "My Personal Website",
+    technologies: [
+      "React",
+      "React Form Hook",
+      "React-Router",
+      "React-Icons",
+      "Framer Motion",
+      "SASS",
+    ],
+    image:
+      "https://github.com/JulianIfesiokwu/Designo-multi-page-website/raw/main/assets/Designo-Website.png",
+    description:
+      "Personal portfolio website for a react developer with routing, form validation, light and dark themes.",
+    live: "https://audiophile-ecommerce-website-coral.vercel.app/",
+    source: "https://github.com/JulianIfesiokwu/my-personal-portfolio",
+  },
+  {
+    name: "To-do App",
+    technologies: ["React", "Beautiful d-n-d", "SASS"],
+    image:
+      "https://github.com/JulianIfesiokwu/To-do-App-2-/raw/main/src/images/Screenshot%202022-06-09%20at%2011-52-51%20React%20App.png",
+    description:
+      "A frontendMentor project which has light and dark themes, drag & drop functionality and filtering of tasks based on completion.",
+    live: "https://to-do-app-2-umber.vercel.app/",
+    source: "https://github.com/JulianIfesiokwu/To-do-App-2-",
   },
   {
     name: "Simple Calculator",
@@ -46,7 +81,7 @@ export const projects = [
     source: "https://julianifesiokwu.github.io/Simple-Calculator/",
   },
   {
-    name: "REST Countries API with color theme switcher",
+    name: "REST Countries API",
     technologies: ["HTML", "CSS", "JavaScript"],
     description:
       "A project showcasing light and dark modes also uses an API to display information about countries around the globe.",
@@ -57,47 +92,14 @@ export const projects = [
       "https://github.com/JulianIfesiokwu/rest-countries-api-with-color-theme-switcher",
   },
   {
-    name: "Shoppers Fun E-commerce Website",
-    technologies: [
-      "React",
-      "Styled Components",
-      "React-Router",
-      "React Form Hook",
-      "React-Icons",
-      "React-Modal",
-    ],
+    name: "Blogr Landing Page",
+    technologies: ["HTML", "CSS", "JavaScript"],
     description:
-      "A responsive ecommerce site created using React, Styled Components, React-Router, and accessing data from Fake Store API.",
+      "A landing page for a fictional website. Frontend Mentor Challenge using HTML,CSS & JS.",
     image:
-      "https://github.com/JulianIfesiokwu/shoppers-fun/raw/main/src/assets/Shoppers-Fun-Website.png",
-    live: "https://shoppers-fun.vercel.app/",
-    source: "https://github.com/JulianIfesiokwu/shoppers-fun",
-  },
-  {
-    name: "To-do App",
-    technologies: ["React", "Beautiful d-n-d", "SASS"],
-    image:
-      "https://github.com/JulianIfesiokwu/To-do-App-2-/raw/main/src/images/Screenshot%202022-06-09%20at%2011-52-51%20React%20App.png",
-    description:
-      "To-do App created using React, SASS, and Beautiful d-n-d. The app also has a light and dark mode.",
-    live: "https://to-do-app-2-umber.vercel.app/",
-    source: "https://github.com/JulianIfesiokwu/To-do-App-2-",
-  },
-  {
-    name: "My Personal portfolio-website",
-    technologies: [
-      "React",
-      "React Form Hook",
-      "React-Router",
-      "React-Icons",
-      "Framer Motion",
-      "SASS",
-    ],
-    image:
-      "https://github.com/JulianIfesiokwu/Designo-multi-page-website/raw/main/assets/Designo-Website.png",
-    description: "Personal portfolio website",
-    live: "https://audiophile-ecommerce-website-coral.vercel.app/",
-    source: "https://github.com/JulianIfesiokwu/my-personal-portfolio",
+      "https://github.com/JulianIfesiokwu/Blogr-Landing-Page/raw/main/assets/Blogr-Landing-Page.png",
+    live: "https://julianifesiokwu.github.io/Blogr-Landing-Page/",
+    source: "https://github.com/JulianIfesiokwu/Blogr-Landing-Page",
   },
   {
     name: "Designo Multi-page Website",
