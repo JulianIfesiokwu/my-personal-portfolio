@@ -27,7 +27,7 @@ const ContactForm = () => {
             href="https://github.com/JulianIfesiokwu"
             target="_blank"
             rel="noreferrer"
-            className="project-link"
+            className="social-link"
           >
             <FaGithub size="30" className="social-links" />
           </a>
@@ -35,7 +35,7 @@ const ContactForm = () => {
             href="https://www.linkedin.com/in/julian-ifesiokwu-1307/"
             target="_blank"
             rel="noreferrer"
-            className="project-link"
+            className="social-link"
           >
             <FaLinkedin size="30" className="social-links" />
           </a>
@@ -43,7 +43,7 @@ const ContactForm = () => {
             href="https://www.frontendmentor.io/dashboard/my-challenges?tab=completed"
             target="_blank"
             rel="noreferrer"
-            className="project-link"
+            className="social-link"
           >
             <SiFrontendmentor size="30" className="social-links" />
           </a>
@@ -59,7 +59,7 @@ const ContactForm = () => {
               type="text"
               className="client-name"
               placeholder="Name"
-              {...register("clientName", { required: "Enter your name" })}
+              {...register("clientName", { required: "Oops! Enter your name" })}
             />
             {errors.clientName && (
               <span className="error-message">{errors.clientName.message}</span>
@@ -73,7 +73,9 @@ const ContactForm = () => {
               type="email"
               className="client-email"
               placeholder="E-mail"
-              {...register("clientEmail", { required: "Enter your email" })}
+              {...register("clientEmail", {
+                required: "Oops! Your email is required.",
+              })}
             />
             {errors.clientEmail && (
               <span className="error-message">
@@ -90,8 +92,8 @@ const ContactForm = () => {
             name=""
             id="message-label"
             className="message"
-            placeholder="Your message here"
-            {...register("clientMessage", { required: "Enter your message" })}
+            placeholder="Your message here..."
+            {...register("clientMessage", { required: "Your message" })}
           ></textarea>
           {errors.clientMessage && (
             <span className="error-message">

@@ -1,9 +1,10 @@
 .top-button {
   position: fixed;
-  bottom: 3rem;
-  right: 3rem;
+  bottom: 2rem;
+  right: 4rem;
   padding: 0.25rem;
-  background-color: blue;
+  background-color: var(--cta-color);
+  border-radius: 5px;
 
   &.hide {
     display: none;

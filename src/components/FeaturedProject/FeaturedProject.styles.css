@@ -16,24 +16,19 @@
 }
 
 .about-project {
-  color: var(--text-color);
+  color: var(--accent-color);
+  font-weight: 600;
   font-family: var(--font-article);
 }
 
 .img-container {
   width: 60%;
-  box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
-  -webkit-box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
-  -moz-box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
 }
 
 img {
   width: 100%;
   height: auto;
   cursor: pointer;
-  box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
-  -webkit-box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
-  -moz-box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
 }
 
 .view-project {

@@ -16,10 +16,11 @@ html {
 }
 
 body .dark {
-  --accent-color: hsl(220, 98%, 61%);
-  --background-color: hsl(235, 21%, 11%);
-  --todoBackground-color: hsl(237, 14%, 26%);
-  --text-color: hsl(234, 39%, 85%);
+  --accent-color: #8d99ae;
+  --background-color: #2b2d42;
+  --highlight-color: #ef233c;
+  --text-color: #edf2f4;
+  --cta-color: #d90429;
 }
 
 body .light {
@@ -37,4 +38,4 @@ a {
 :root {
   --font-heading: Roboto, sans-serif;
   --font-article: "Open Sans", Cantarell;
-} /*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */

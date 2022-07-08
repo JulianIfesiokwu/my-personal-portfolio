@@ -7,9 +7,7 @@
   align-items: center;
   padding: 1rem 4rem;
   top: 0;
-  box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
-  -webkit-box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
-  -moz-box-shadow: -1px 10px 35px -10px rgba(135, 135, 135, 0.75);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
   font-family: var(--font-heading);
   font-weight: 500;
 }
@@ -40,6 +38,7 @@
 }
 
 .active {
+  color: var(--cta-color);
   font-weight: 700;
   font-size: 1.125rem;
 }
@@ -89,7 +88,7 @@
   }
 
   .active {
-    background-color: red;
+    background-color: var(--cta-color);
     padding: 1rem 0;
   }
 }

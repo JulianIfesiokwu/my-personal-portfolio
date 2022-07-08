@@ -1,8 +1,11 @@
-import './Button.styles.scss'
+import { IoIosArrowForward } from "react-icons/io";
+import "./Button.styles.scss";
 
 const Button = ({ title }) => {
-    return (
-        <button className='button'>{title}</button>
-    )
-}
-export default Button
+  return (
+    <button className="button">
+      {title} <IoIosArrowForward className="icon" size="25" />
+    </button>
+  );
+};
+export default Button;

@@ -17,10 +17,11 @@ html {
 }
 
 body .dark {
-  --accent-color: hsl(220, 98%, 61%);
-  --background-color: hsl(235, 21%, 11%);
-  --todoBackground-color: hsl(237, 14%, 26%);
-  --text-color: hsl(234, 39%, 85%);
+  --accent-color: #8d99ae;
+  --background-color: #2b2d42;
+  --highlight-color: #ef233c;
+  --text-color: #edf2f4;
+  --cta-color: #d90429;
 }
 
 body .light {
@@ -40,3 +41,8 @@ a {
   --font-article: "Open Sans", Cantarell;
   // font-family: "Helvetica Neue", sans-serif;
 }
+// dark palette
+// dark-for background: #222831
+// grey-neutral: #dddddd
+// grey- darker: 30475E
+// orange-highlight:

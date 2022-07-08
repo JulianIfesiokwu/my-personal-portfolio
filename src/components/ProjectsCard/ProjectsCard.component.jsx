@@ -32,13 +32,13 @@ const ProjectsCard = ({
             rel="noreferrer"
             className="project-link"
           >
-            Live Demo
+            Live
           </a>
           <a
             href={source}
             target="_blank"
             rel="noreferrer"
-            className="project-link"
+            className="project-link-two"
           >
             Source code
           </a>

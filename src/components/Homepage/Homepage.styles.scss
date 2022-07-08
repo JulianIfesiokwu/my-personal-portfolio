@@ -17,7 +17,8 @@
 }
 
 .intro-paragraph {
-  color: var(--text-color);
+  color: var(--accent-color);
+  font-weight: 600;
   font-family: var(--font-article);
   margin-top: 1rem;
 }
@@ -28,12 +29,8 @@
 
 .dev-name,
 .dev-title {
-  color: red;
   font-size: 4.5rem;
-}
-
-.dev-title {
-  background-color: skyblue;
+  color: var(--highlight-color);
 }
 
 .skills {
@@ -50,8 +47,10 @@
   font-family: var(--font-heading);
 }
 
-.skills-info {
-  color: var(--text-color);
+.skills-info,
+.about-skills-info {
+  font-weight: 600;
+  color: var(--accent-color);
   font-family: var(--font-article);
 }
 

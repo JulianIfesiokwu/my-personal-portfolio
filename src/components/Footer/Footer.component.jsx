@@ -1,11 +1,14 @@
 import "./Footer.styles.scss";
 
 const Footer = () => {
-    return (
-        <footer className="footer">
-            <p>This is the footer</p>
-        </footer>
-    )
-}
+  const today = new Date();
+  const year = today.getFullYear();
 
-export default Footer
+  return (
+    <footer className="footer">
+      <p>&copy; {year}</p>
+    </footer>
+  );
+};
+
+export default Footer;
