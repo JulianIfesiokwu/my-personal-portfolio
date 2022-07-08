@@ -1,6 +1,7 @@
 import ContactForm from "../ContactForm/ContactForm.component";
 import Button from "../Button/Button.component";
 import FeaturedProject from "../FeaturedProject/FeaturedProject.component";
+import LandingImage from "../../assets/Landing_image.svg";
 
 import "./Homepage.styles.css";
 
@@ -8,15 +9,22 @@ const Homepage = () => {
   return (
     <div className="homepage">
       <section className="landing">
-        <h1 className="introduction">
-          Hello,{" "}
-          <span className="row">
-            I am <span className="dev-name">Julian</span>,{" "}
-          </span>
-          <span className="dev-title">Front End Developer.</span>
-        </h1>
-        <p className="intro-paragraph">I love building projects for the web.</p>
-        <Button title={`Let's get in touch!`} className="intro-btn" />
+        <div className="landing-info">
+          <h1 className="introduction">
+            Hello,{" "}
+            <span className="row">
+              I am <span className="dev-name">Julian</span>,{" "}
+            </span>
+            <span className="dev-title">Front End Developer.</span>
+          </h1>
+          <p className="intro-paragraph">
+            I love building projects for the web.
+          </p>
+          <Button title={`Let's get in touch!`} className="intro-btn" />
+        </div>
+        <div className="landing-image">
+          <img className="landing-img" src={LandingImage} alt="" />
+        </div>
       </section>
       <section className="skills">
         <article className="skills-info">

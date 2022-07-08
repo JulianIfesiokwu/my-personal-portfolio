@@ -5,13 +5,24 @@
 }
 
 .landing {
-  margin-top: 4rem;
+  margin-top: 3rem;
   height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.landing-info {
+  width: 60%;
+}
+
+.landing-img {
+  width: 100%;
+  height: auto;
 }
 
 .introduction {
   margin-top: 1rem;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: var(--text-color);
   font-family: var(--font-heading);
 }
@@ -29,7 +40,7 @@
 
 .dev-name,
 .dev-title {
-  font-size: 4.5rem;
+  font-size: 3rem;
   color: var(--highlight-color);
 }
 
@@ -66,6 +77,15 @@
   .homepage {
     padding: 0.5rem 1rem;
     margin-top: 3rem;
+  }
+
+  .landing {
+    margin-top: 18rem;
+    flex-direction: column-reverse;
+  }
+
+  .landing-info {
+    width: 100%;
   }
 
   .introduction {
