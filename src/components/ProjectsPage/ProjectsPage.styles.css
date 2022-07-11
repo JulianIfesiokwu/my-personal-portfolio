@@ -56,4 +56,8 @@
   .projects-container {
     flex-direction: column;
   }
+
+  .filter-buttons {
+    width: 100%;
+  }
 }/*# sourceMappingURL=ProjectsPage.styles.css.map */
