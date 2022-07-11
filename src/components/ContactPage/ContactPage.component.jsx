@@ -1,13 +1,16 @@
-import ContactForm from "../ContactForm/ContactForm.component"
+import ContactForm from "../ContactForm/ContactForm.component";
+import AnimatedPage from "../AnimatedPage/AnimatedPage";
 
-import './ContactPage.styles.scss'
+import "./ContactPage.styles.scss";
 
 const ContactPage = () => {
-    return (
-        <section className="contact-page">
-            <ContactForm />
-        </section>
-    )
-}
+  return (
+    <AnimatedPage>
+      <section className="contact-page">
+        <ContactForm />
+      </section>
+    </AnimatedPage>
+  );
+};
 
-export default ContactPage
+export default ContactPage;
