@@ -3,25 +3,21 @@ import { useState, useEffect } from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import "./ScrollToTop.styles.css";
 
-const ScrollToTop = (showBelow) => {
-  const [show, setShow] = useState(false);
+const ScrollToTop = ({ showBelow }) => {
+  const [isVisible, setIsVisible] = useState(false);
 
-  const handleScroll = () => {
+  const toggleVisibility = () => {
     if (window.pageYOffset > showBelow) {
-      if (!show) {
-        setShow(true);
-      } else {
-        if (show) {
-          setShow(false);
-        }
-      }
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
     }
   };
 
   useEffect(() => {
     if (showBelow) {
-      window.addEventListener("scroll", handleScroll);
-      return window.removeEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", toggleVisibility);
+      return () => window.removeEventListener("scroll", toggleVisibility);
     }
   });
 
@@ -31,7 +27,7 @@ const ScrollToTop = (showBelow) => {
 
   return (
     <div
-      className={showBelow ? "top-button" : "top-button hide"}
+      className={isVisible ? "top-button" : "top-button hide"}
       onClick={handleClick}
     >
       {showBelow && <MdKeyboardArrowUp size="30" color="white" />}
