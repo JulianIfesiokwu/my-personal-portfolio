@@ -2,6 +2,7 @@
 
 body {
   width: 100%;
+  background-color: var(--background-color);
 }
 
 *,
@@ -25,11 +26,11 @@ body .dark {
 }
 
 body .light {
-  --accent-color: #e5e5e5;
-  --background-color: #8d99ae;
-  --hightlight-color: #000000;
-  --text-color: #14213d;
-  --cta-color: #fca311;
+  --accent-color: #83c5be;
+  --background-color: #edf6f9;
+  --hightlight-color: #ffddd2;
+  --text-color: #e29578;
+  --cta-color: #006d77;
 }
 
 a {
