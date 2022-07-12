@@ -15,7 +15,7 @@ const Navbar = ({ changeTheme, theme }) => {
     <div className="navbar">
       <Link to="/">
         <p className="logo">
-          dev<span className="logo-name">julian</span>
+          developer<span className="logo-name">julian</span>
         </p>
       </Link>
 
@@ -35,7 +35,7 @@ const Navbar = ({ changeTheme, theme }) => {
           <span className="index">03.</span> Projects
         </NavLink>
         <NavLink to="/contact" className="nav-item" onClick={showMenu}>
-          <span className="index">04.</span> Contact
+          <span className="index">04.</span> Contact Me
         </NavLink>
       </ul>
       {theme ? (
