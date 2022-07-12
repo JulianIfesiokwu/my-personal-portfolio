@@ -24,7 +24,7 @@
 }
 
 .filter-buttons {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 1rem;
 }
@@ -52,11 +52,9 @@
   .projects-page {
     padding: 0.5rem 1rem;
   }
-
   .projects-container {
     flex-direction: column;
   }
-
   .filter-buttons {
     width: 100%;
   }
