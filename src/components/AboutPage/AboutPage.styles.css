@@ -2,4 +2,49 @@
   padding: 1rem 4rem;
   margin-top: 3rem;
   background-color: var(--background-color);
+}
+
+.about-title {
+  margin-top: 4rem;
+  font-size: 3rem;
+  color: var(--text-color);
+  font-family: var(--font-heading);
+  text-align: center;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 2rem auto;
+  justify-content: space-between;
+}
+
+.tech {
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.tech-icon {
+  color: var(--text-color);
+}
+
+#react {
+  color: #61dbfb;
+}
+
+#html {
+  color: #e34c26;
+}
+
+#css3 {
+  color: #264de4;
+}
+
+#javaScript {
+  color: #f0db4f;
+}
+
+#sass {
+  color: #c69;
 }/*# sourceMappingURL=AboutPage.styles.css.map */

@@ -2,7 +2,6 @@
 body {
   width: 100%;
   background-color: var(--background-color);
-  transition: background-color 1s ease;
 }
 
 *,
@@ -41,4 +40,4 @@ a {
 :root {
   --font-heading: Roboto, sans-serif;
   --font-article: "Open Sans", Cantarell;
-} /*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */
