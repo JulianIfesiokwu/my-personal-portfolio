@@ -41,7 +41,7 @@
 .dev-name,
 .dev-title {
   font-size: 3rem;
-  color: var(--highlight-color);
+  color: var(--cta-color);
 }
 
 .skills {
@@ -78,39 +78,31 @@
     padding: 0.5rem 1rem;
     margin-top: 3rem;
   }
-
   .landing {
     margin-top: 18rem;
     flex-direction: column-reverse;
   }
-
   .landing-info {
     width: 100%;
   }
-
   .introduction {
     font-size: 2.5rem;
   }
-
   .dev-name,
 .dev-title {
-    color: red;
+    color: var(--cta-color);
     font-size: 3.5rem;
   }
-
   .skills {
     margin-top: 2rem;
     flex-direction: column;
   }
-
   .skills-img {
     margin: 2rem 0;
   }
-
   .sample-projects {
     flex-direction: column;
   }
-
   .sample-info {
     width: 100%;
   }

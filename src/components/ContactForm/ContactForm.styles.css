@@ -87,30 +87,24 @@
   .contact-form {
     flex-direction: column;
   }
-
   .details {
     flex-direction: column;
   }
-
   .details-input {
     width: 100%;
   }
-
   .message-form,
 .contact-info {
     width: 100%;
   }
-
   .contact-info {
     margin-bottom: 2rem;
   }
-
   .email-label,
 .name-label,
 .message {
     display: block;
   }
-
   .client-email,
 .client-name {
     display: block;

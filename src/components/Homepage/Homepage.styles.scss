@@ -41,7 +41,7 @@
 .dev-name,
 .dev-title {
   font-size: 3rem;
-  color: var(--highlight-color);
+  color: var(--cta-color);
 }
 
 .skills {
@@ -94,7 +94,7 @@
 
   .dev-name,
   .dev-title {
-    color: red;
+    color: var(--cta-color);
     font-size: 3.5rem;
   }
 

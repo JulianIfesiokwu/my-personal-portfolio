@@ -15,7 +15,7 @@ const ProjectsCard = ({
       </div>
       <div className="project-information">
         <p className="project-name">{name}</p>
-        <p className="technologies">
+        <p className="lib-used">
           {technologies.map((tech, index) => {
             return (
               <span className="pill" key={index}>

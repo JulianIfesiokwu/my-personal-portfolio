@@ -41,11 +41,9 @@ img {
     width: 100%;
     flex-direction: column-reverse;
   }
-
   .img-container {
     width: 100%;
   }
-
   .project-details {
     width: 100%;
   }

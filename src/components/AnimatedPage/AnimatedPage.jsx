@@ -4,7 +4,7 @@ import React from "react";
 const animations = {
   initial: { opacity: 0 },
   animate: { opacity: 1 },
-  end: { opacity: 0, transition: { duration: 0.5 } },
+  end: { opacity: 0 },
 };
 
 const AnimatedPage = ({ children }) => {
