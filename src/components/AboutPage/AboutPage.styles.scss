@@ -48,3 +48,28 @@
 #sass {
   color: #c69;
 }
+
+@media only screen and (max-width: 660px) {
+  .about-page {
+    padding: 0.5rem 1rem;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .technologies {
+    width: 100%;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+
+  .tech {
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+  }
+
+  .metrics {
+    text-align: center;
+  }
+}

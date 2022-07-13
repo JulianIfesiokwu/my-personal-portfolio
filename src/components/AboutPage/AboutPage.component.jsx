@@ -51,10 +51,6 @@ const AboutPage = () => {
             <SiFramer size="70" className="tech-icon" />
           </div>
         </div>
-
-        <div className="metrics">
-          <div className="metric"></div>
-        </div>
         <div className="social">
           <a
             href="https://github.com/JulianIfesiokwu"
