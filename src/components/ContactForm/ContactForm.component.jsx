@@ -1,4 +1,3 @@
-import Button from "../Button/Button.component";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiFrontendmentor } from "react-icons/si";
 import { useForm } from "react-hook-form";
@@ -49,13 +48,18 @@ const ContactForm = () => {
           </a>
         </div>
       </article>
-      <form className="message-form" onSubmit={handleSubmit(onSubmit)}>
+      <form
+        className="message-form"
+        action="https://formsubmit.co/julianifesiokwu@gmail.com"
+        method="POST"
+      >
         <div className="details">
           <div className="details-input">
             <label htmlFor="" className="name-label">
               Name
             </label>
             <input
+              name="Client-name"
               type="text"
               className="client-name"
               placeholder="Name"
@@ -70,6 +74,7 @@ const ContactForm = () => {
               Email
             </label>
             <input
+              name="Client-email"
               type="email"
               className="client-email"
               placeholder="E-mail"
@@ -89,7 +94,7 @@ const ContactForm = () => {
             Your message
           </label>
           <textarea
-            name=""
+            name="Client-Message"
             id="message-label"
             className="message"
             placeholder="Your message here..."
@@ -101,7 +106,7 @@ const ContactForm = () => {
             </span>
           )}
         </div>
-        <Button title={`Contact me!`} />
+        <button type="submit">Contact me!</button>
       </form>
     </section>
   );

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import ScrollToTop from "./components/ScrollToTop.component";
 import SharedLayout from "./components/SharedLayout/SharedLayout.component";
@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <>
       <ScrollToTop />
       <AnimatePresence exitBeforeEnter>
         <Routes>
@@ -30,7 +30,7 @@ function App() {
           ></Route>
         </Routes>
       </AnimatePresence>
-    </BrowserRouter>
+    </>
   );
 }
 

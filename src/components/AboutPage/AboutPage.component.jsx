@@ -1,19 +1,6 @@
 import AnimatedPage from "../AnimatedPage/AnimatedPage";
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3,
-  FaSass,
-  FaLinkedin,
-  FaGithub,
-  FaFreeCodeCamp,
-} from "react-icons/fa";
-import {
-  SiJavascript,
-  SiStyledcomponents,
-  SiFramer,
-  SiFrontendmentor,
-} from "react-icons/si";
+import { FaReact, FaHtml5, FaCss3, FaSass } from "react-icons/fa";
+import { SiJavascript, SiStyledcomponents } from "react-icons/si";
 import ContactForm from "../ContactForm/ContactForm.component";
 import "./AboutPage.styles.scss";
 
@@ -47,35 +34,6 @@ const AboutPage = () => {
           <div className="tech">
             <SiStyledcomponents size="70" className="tech-icon" />
           </div>
-          <div className="tech">
-            <SiFramer size="70" className="tech-icon" />
-          </div>
-        </div>
-        <div className="social">
-          <a
-            href="https://github.com/JulianIfesiokwu"
-            target="_blank"
-            rel="noreferrer"
-            className="social-link"
-          >
-            <FaGithub size="60" className="social-links" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/julian-ifesiokwu-1307/"
-            target="_blank"
-            rel="noreferrer"
-            className="social-link"
-          >
-            <FaLinkedin size="60" className="social-links" />
-          </a>
-          <a
-            href="https://www.frontendmentor.io/dashboard/my-challenges?tab=completed"
-            target="_blank"
-            rel="noreferrer"
-            className="social-link"
-          >
-            <SiFrontendmentor size="60" className="social-links" />
-          </a>
         </div>
         <ContactForm />
       </div>
