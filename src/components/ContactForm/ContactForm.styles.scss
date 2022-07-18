@@ -83,6 +83,25 @@
   padding: 0.5rem;
 }
 
+.contact-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: var(--text-color);
+  background-color: var(--cta-color);
+  font-family: var(--font-article);
+  border-radius: 5px;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.contact-btn:hover {
+  cursor: pointer;
+  background-color: var(--text-color);
+  color: var(--cta-color);
+}
+
 @media only screen and (max-width: 660px) {
   .contact-form {
     flex-direction: column;

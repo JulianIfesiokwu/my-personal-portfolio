@@ -28,7 +28,7 @@ const ContactForm = () => {
             rel="noreferrer"
             className="social-link"
           >
-            <FaGithub size="30" className="social-links" />
+            <FaGithub size="40" className="social-links" />
           </a>
           <a
             href="https://www.linkedin.com/in/julian-ifesiokwu-1307/"
@@ -36,7 +36,7 @@ const ContactForm = () => {
             rel="noreferrer"
             className="social-link"
           >
-            <FaLinkedin size="30" className="social-links" />
+            <FaLinkedin size="40" className="social-links" />
           </a>
           <a
             href="https://www.frontendmentor.io/dashboard/my-challenges?tab=completed"
@@ -44,7 +44,7 @@ const ContactForm = () => {
             rel="noreferrer"
             className="social-link"
           >
-            <SiFrontendmentor size="30" className="social-links" />
+            <SiFrontendmentor size="40" className="social-links" />
           </a>
         </div>
       </article>
@@ -106,7 +106,9 @@ const ContactForm = () => {
             </span>
           )}
         </div>
-        <button type="submit">Contact me!</button>
+        <button type="submit" className="contact-btn">
+          Contact me!
+        </button>
       </form>
     </section>
   );

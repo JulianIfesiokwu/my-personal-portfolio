@@ -28,9 +28,12 @@ const Navbar = ({ changeTheme, theme }) => {
         <NavLink to="/" className="nav-item" onClick={showMenu}>
           <span className="index">01.</span> Home
         </NavLink>
-        <NavLink to="/about" className="nav-item" onClick={showMenu}>
+        <a href="#about" rel="noreferrer">
           <span className="index">02.</span> About
-        </NavLink>
+        </a>
+        <Link to="/#about" className="nav-item" onClick={showMenu}>
+          <span className="index">02.</span> About
+        </Link>
         <NavLink to="/projects" className="nav-item" onClick={showMenu}>
           <span className="index">03.</span> Projects
         </NavLink>

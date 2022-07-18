@@ -4,6 +4,7 @@ import Button from "../Button/Button.component";
 import FeaturedProject from "../FeaturedProject/FeaturedProject.component";
 import AnimatedPage from "../AnimatedPage/AnimatedPage";
 import LandingImage from "../../assets/Landing_image.svg";
+import About from "../About/About.component";
 
 import "./Homepage.styles.css";
 
@@ -31,23 +32,7 @@ const Homepage = () => {
             <img className="landing-img" src={LandingImage} alt="" />
           </div>
         </section>
-        <section className="skills">
-          <article className="skills-info">
-            <h2 className="skills-title">
-              <span>Skills</span> & tools
-            </h2>
-            <p className="about-skills-info">
-              For a more detailed overview, please feel free to check the tools
-              that were used on a per-project basis.
-            </p>
-          </article>
-          <article className="skills-img">
-            <img
-              src="https://www.careeraddict.com/uploads/article/59292/illustration-man-desk.png"
-              alt=""
-            />
-          </article>
-        </section>
+        <About />
         <section className="sample-projects">
           <article className="sample-info">
             <h2 className="skills-title">

@@ -44,13 +44,6 @@
   color: var(--cta-color);
 }
 
-.skills {
-  margin-top: 2rem;
-  display: flex;
-  flex: 1;
-  align-items: center;
-}
-
 .skills-title {
   margin-bottom: 1rem;
   font-size: 2rem;
@@ -96,15 +89,6 @@
   .dev-title {
     color: var(--cta-color);
     font-size: 3.5rem;
-  }
-
-  .skills {
-    margin-top: 2rem;
-    flex-direction: column;
-  }
-
-  .skills-img {
-    margin: 2rem 0;
   }
 
   .sample-projects {
