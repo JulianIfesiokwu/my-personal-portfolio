@@ -1,36 +1,56 @@
+import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react";
-import ScrollToTop from "./components/ScrollToTop.component";
-import SharedLayout from "./components/SharedLayout/SharedLayout.component";
-import { AnimatePresence } from "framer-motion";
+import SharedLayout from "./components/sharedLayout/SharedLayout.component";
+import { themeContext } from "./contexts/themeContext";
+import { contactFormContext } from "./contexts/contactFormContext";
+import AboutPage from './pages/aboutPage/AboutPage';
+import HomePage from './pages/homePage/HomePage';
+import ProjectsPage from './pages/projectsPage/ProjectsPage';
+import ScrollToTop from "./components/scrollToTop.component";
+// animate on scroll library
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import "./App.css";
 
 function App() {
   const [theme, setTheme] = useState(false);
+  const [data, setData] = useState({});
 
-  const changeTheme = () => {
+  const handleChange = (e) => {
+    let newInput = {[e.target.name]: e.target.value};
+
+    setData({...data, ...newInput});
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(data);
+    setData({});
+  }
+
+  function toggleTheme() {
     setTheme(!theme);
   };
 
+  // initiate aos library
+  useEffect(() => {
+    Aos.init({duration: 1500});
+  }, [])
+
   return (
-    <>
-      <ScrollToTop />
-      <AnimatePresence exitBeforeEnter>
+    <themeContext.Provider value={{toggleTheme, theme}}>
+      <contactFormContext.Provider value={{data, setData, handleChange, handleSubmit}}>
+        <ScrollToTop />
         <Routes>
-          <Route
-            path="*"
-            element={
-              <SharedLayout
-                setTheme={setTheme}
-                changeTheme={changeTheme}
-                theme={theme}
-              />
-            }
-          ></Route>
+          <Route path='/' element={<SharedLayout />}>
+            <Route index path='/' element={<HomePage />} />
+            <Route path='/about' element={<AboutPage />} />
+            <Route path='/projects' element={<ProjectsPage />} />        
+          </Route>
         </Routes>
-      </AnimatePresence>
-    </>
+        </contactFormContext.Provider>
+      </themeContext.Provider>
   );
 }
 
