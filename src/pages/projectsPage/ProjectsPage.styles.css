@@ -1,0 +1,158 @@
+
+.projects-details {
+    padding: 1rem;
+    margin-top: 3.5rem;
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+}
+
+.filter-buttons {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-btn {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    color: #FFFFFF;
+    background-color: var(--interactive-text-color);
+    border: 1px solid var(--interactive-text-color);
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.filter-btn:hover {
+    cursor: pointer;
+    border: 1px solid black;
+    color:#FFFFFF;
+    background-color: black; 
+}
+
+.selected {
+    background-color: black;
+}
+
+.project-thumbnail {
+    cursor: pointer;
+}
+
+.requested {
+    padding: 0 1rem;
+    padding-top: 1rem;
+    position: fixed;
+    z-index: 90;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    color: var(--primary-text-color);
+    background-color: var(--background-color);
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+}
+
+.expanded {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+
+.expanded h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.expanded p {
+    margin-bottom: 1rem;
+}
+
+.live-link {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: #FFFFFF;
+    background-color: var(--interactive-text-color);
+    border: 1px solid var(--interactive-text-color);
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.live-link:hover {
+    cursor: pointer;
+    border: 1px solid black;
+    color:#FFFFFF;
+    background-color: var(--hover-interactive-color); 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .projects-details {
+        display: flex;
+        align-items: top;
+        padding: 2rem 4rem;
+        margin-top: 3.5rem;
+    }
+
+    .filter-buttons {
+        margin-top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .filter-btn {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .projects-filter {
+        width: 30%;
+    }
+
+    .project-list {
+        width: 70%;
+    }
+
+    .requested {
+        padding: 0.75rem 4rem;
+        height: 90vh;
+    }
+
+    .close-btn {
+        right: 4rem;
+        top: 2rem
+    }
+
+    .expanded {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
