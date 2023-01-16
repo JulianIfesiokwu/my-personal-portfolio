@@ -1,20 +1,17 @@
-import React from "react";
-import Navbar from "../Navbar/Navbar.component";
-import Footer from "../Footer/Footer.component";
-import ScrollToTop from "../Scroll/ScrollToTop.component";
-import AnimatedRoutes from "../AnimatedRoutes/AnimatedRoutes.component";
+import React, { useContext } from 'react';
+import { Outlet } from 'react-router-dom';
+import Header from '../header/Header.component';
+import Footer from '../footer/Footer.component';
+import { themeContext } from '../../contexts/themeContext';
 
-const SharedLayout = ({ setTheme, changeTheme, theme }) => {
+export default function SharedLayout() {
+  const { theme } = useContext(themeContext);
+
   return (
-    <div className={theme ? "dark" : "light"}>
-      <Navbar setTheme={setTheme} changeTheme={changeTheme} theme={theme} />
-
-      <AnimatedRoutes />
-
-      <ScrollToTop showBelow={250} />
-      <Footer />
+    <div className={theme ? 'light' : 'dark'}>
+        <Header />
+        <Outlet />
+        <Footer />
     </div>
-  );
-};
-
-export default SharedLayout;
+  )
+}
