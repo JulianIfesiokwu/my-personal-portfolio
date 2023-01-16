@@ -16,7 +16,7 @@ const Footer = () => {
                 <a
                     href="https://github.com/JulianIfesiokwu"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="social-link"
                 >
                     <FaGithub size="25" className="social-links"/>
@@ -24,7 +24,7 @@ const Footer = () => {
                 <a
                     href="https://www.linkedin.com/in/julian-ifesiokwu-1307/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="social-link"
                 >
                     <FaLinkedin size="25" className="social-links" color='#0072b1' />
@@ -32,7 +32,7 @@ const Footer = () => {
                 <a
                     href="https://twitter.com/mrjules07"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="social-link"
                 >
                 <FaTwitter size="25" className="social-links" color='#00acee' />
@@ -40,7 +40,7 @@ const Footer = () => {
                 <a
                     href="https://www.frontendmentor.io/dashboard/my-challenges?tab=completed"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="social-link"
                 >
                     <SiFrontendmentor size="25" className="social-links" />

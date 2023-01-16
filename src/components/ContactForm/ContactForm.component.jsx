@@ -15,7 +15,7 @@ const ContactForm = () => {
           <a
             href="https://github.com/JulianIfesiokwu"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="social-link"
           >
             <FaGithub size="40" className="social-links" />
@@ -23,7 +23,7 @@ const ContactForm = () => {
           <a
             href="https://www.linkedin.com/in/julian-ifesiokwu-1307/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="social-link"
           >
             <FaLinkedin size="40" className="social-links" color='#0072b1' />
@@ -31,7 +31,7 @@ const ContactForm = () => {
           <a
             href="https://twitter.com/mrjules07"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="social-link"
           >
             <FaTwitter size="40" className="social-links" color='#00acee' />
@@ -39,7 +39,7 @@ const ContactForm = () => {
           <a
             href="https://www.frontendmentor.io/dashboard/my-challenges?tab=completed"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="social-link"
           >
             <SiFrontendmentor size="40" className="social-links" />
