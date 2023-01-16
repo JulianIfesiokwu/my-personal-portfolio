@@ -12,6 +12,7 @@ const ProjectsPage = () => {
   // For the requestedProject
   const [requested, setRequested] = useState();
 
+  // when filter button is clicked
   const filterProjects = ({ filter }) => {
     // make the clicked filter button active
     setActive(filter);
@@ -39,11 +40,15 @@ const ProjectsPage = () => {
       return project.name === name
     });
     setRequested(requestedProject);
+    // disable scrolling on body
+    document.body.style.overflow = 'hidden';
   }
 
   // close requested project
   const closeRequest = () => {
     setRequested('');
+    // enable scrolling on body
+    document.body.style.overflow = 'auto';
   }
 
   return (
