@@ -24,9 +24,11 @@ function App() {
     setData({...data, ...newInput});
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e, clientName, clientEmail, clientMessage) => {
     e.preventDefault();
-    console.log(data);
+    if(!clientEmail || clientName || clientMessage) {
+      console.log('data is empty')
+    }
     setData({});
   }
 
