@@ -6,7 +6,7 @@ import { contactFormContext } from "./contexts/contactFormContext";
 import AboutPage from './pages/aboutPage/AboutPage';
 import HomePage from './pages/homePage/HomePage';
 import ProjectsPage from './pages/projectsPage/ProjectsPage';
-import ScrollToTop from "./components/scrollToTop.component";
+import ScrollToTop from "./components/ScrollToTop.component";
 // animate on scroll library
 import Aos from 'aos';
 import 'aos/dist/aos.css';
