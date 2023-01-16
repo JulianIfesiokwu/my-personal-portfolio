@@ -1,0 +1,35 @@
+.project-card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background-color: var(--uniform-background);
+    margin: 1rem 0;
+    transition: transform .4s; /* Animation */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: scale(1.05);
+}
+
+.view-project {
+    padding: 1rem;
+    color: var(--interactive-text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.view-project h3 {
+    font-weight: 300;
+}
+
+.view-project a {
+    margin-top: 1rem;
+}
+
+.live:hover, .source-code:hover {
+    color: var(--interactive-text-color);
+}
