@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* light mode */
+body .light {
+  --background-color: #FFFFFF;
+  --uniform-background: #DEE4E7;
+
+  /* //primary text color for paragraphs, labels and other essentials */
+  --primary-text-color: #222222;
+  /* //secondary text color like form microcopy, captions, and table headings */
+  --primary-text-light-background: #37474F;
+  /* //interactive text (mostly, links) */
+  --interactive-text-color: rgb(0, 113, 188);
+  /* //inline error text color shown adjacent to controls */
+  --error-color: #bf0000;
+
+  --hover-interactive-color: rgba(0, 113, 188, 0.8);
+  --hold-active-color: rgba(0, 113, 188, 0.6);
+}
+
+body .dark {
+  --uniform-background: #37474F;
+  --background-color: #222222;
+
+  /* //primary text color for paragraphs, labels and other essentials */
+  --primary-text-color: #FFFFFF;
+  /* //secondary text color like form microcopy, captions, and table headings */
+  --primary-text-black-background: #DEE4E7;
+   /* //interactive text (mostly, links) */
+  --interactive-text-color: rgb(0, 113, 188);
+  /* //inline error text color shown adjacent to controls */
+  --error-color: #bf0000;
+  
+  --hover-interactive-color: rgba(0, 113, 188, 0.8);
+  --hold-active-color: rgba(0, 113, 188, 0.6);
+}
+
