@@ -1,13 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import SharedLayout from "./components/sharedLayout/SharedLayout.component";
+import SharedLayout from "./components/sharedLayout/SharedLayout.component.jsx";
 import { themeContext } from "./contexts/themeContext";
 import { contactFormContext } from "./contexts/contactFormContext";
 import AboutPage from './pages/aboutPage/AboutPage';
 import HomePage from './pages/homePage/HomePage';
 import ProjectsPage from './pages/projectsPage/ProjectsPage';
-import ScrollToTop from "./components/ScrollToTop.component";
+import ScrollToTop from "./components/ScrollToTop.component.jsx";
   
 // animate on scroll library
 import Aos from 'aos';
