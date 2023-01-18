@@ -52,7 +52,7 @@ export const projects = [
       "Animate on Scroll"      ,
     ],
     image:
-      "https://github.com/JulianIfesiokwu/my-personal-portfolio/Portfolio screenshot.png",
+      "https://github.com/JulianIfesiokwu/my-personal-portfolio/raw/main/src/assets/Portfolio%20screenshot.png",
     description:
       "Personal portfolio website for a react developer with routing, form validation, light and dark themes.",
     live: "https://audiophile-ecommerce-website-coral.vercel.app/",

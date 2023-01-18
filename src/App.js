@@ -7,13 +7,13 @@ import AboutPage from './pages/aboutPage/AboutPage';
 import HomePage from './pages/homePage/HomePage';
 import ProjectsPage from './pages/projectsPage/ProjectsPage';
 import ScrollToTop from "./components/ScrollToTop.component.jsx";
-import SharedLayout from './components/sharedLayout/SharedLayout.component';
   
 // animate on scroll library
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 import "./App.css";
+import SharedLayout from "./components/sharedLayout/SharedLayout.component";
 
 function App() {
   const [theme, setTheme] = useState(false);
