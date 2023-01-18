@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectCard from '../../components/projectCard/ProjectCard.component';
-import ContactForm from '../../components/contactForm/ContactForm.component';
 import { FaReact, FaHtml5, FaCss3, FaSass, FaGithub, FaNodeJs } from "react-icons/fa";
 import { SiJavascript, SiMongodb } from "react-icons/si";
 
@@ -104,7 +103,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <ContactForm />
     </main>
   );
 };
