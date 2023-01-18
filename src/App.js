@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { themeContext } from "./contexts/themeContext";
 import { contactFormContext } from "./contexts/contactFormContext";
+import PageLayout from "./components/pageLayout.component";
 import AboutPage from './pages/aboutPage/AboutPage';
 import HomePage from './pages/homePage/HomePage';
 import ProjectsPage from './pages/projectsPage/ProjectsPage';
@@ -13,7 +14,6 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 import "./App.css";
-import SharedLayout from "./components/sharedLayout/SharedLayout.component";
 
 function App() {
   const [theme, setTheme] = useState(false);
@@ -53,7 +53,7 @@ function App() {
       <contactFormContext.Provider value={{ data, setData, handleChange, handleSubmit }}>
         <ScrollToTop />
         <Routes>
-          <Route path='/' element={<SharedLayout />}>
+          <Route path='/' element={<PageLayout />}>
             <Route index path='/' element={<HomePage />} />
             <Route path='/about' element={<AboutPage />} />
             <Route path='/projects' element={<ProjectsPage />} />        
