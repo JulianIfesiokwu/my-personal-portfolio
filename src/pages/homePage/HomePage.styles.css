@@ -53,6 +53,7 @@
 }
 
 .about {
+    overflow: hidden;
     padding: 2rem 1rem;
     background-color: var(--background-color);
     color: var(--primary-text-color);
