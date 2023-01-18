@@ -1,5 +1,4 @@
 import React from 'react';
-import ContactForm from '../../components/contactForm/ContactForm.component';
 import './AboutPage.styles.css';
 import ProjectBackground from '../../assets/project-background.jpg';
 
@@ -23,7 +22,6 @@ const AboutPage = () => {
         </article>        
       </section>
       <section className='all-projects'></section>
-      <ContactForm />
     </main>
   );
 };
