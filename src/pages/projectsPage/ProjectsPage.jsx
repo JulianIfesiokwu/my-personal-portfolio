@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ContactForm from '../../components/contactForm/ContactForm.component';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import { projects } from '../../data';
 import "./ProjectsPage.styles.css";
@@ -101,7 +100,6 @@ const ProjectsPage = () => {
           </Masonry>
         </ResponsiveMasonry>
       </section>
-      <ContactForm />
     </main>
   )
 };
