@@ -4,7 +4,7 @@ import Header from '../header/Header.component';
 import Footer from '../footer/Footer.component';
 import { themeContext } from '../../contexts/themeContext';
 
-export default function SharedLayout() {
+function SharedLayout() {
   const { theme } = useContext(themeContext);
 
   return (
@@ -14,4 +14,6 @@ export default function SharedLayout() {
         <Footer />
     </div>
   )
-}
+};
+
+export default SharedLayout;

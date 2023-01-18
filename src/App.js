@@ -8,6 +8,7 @@ import AboutPage from './pages/aboutPage/AboutPage';
 import HomePage from './pages/homePage/HomePage';
 import ProjectsPage from './pages/projectsPage/ProjectsPage';
 import ScrollToTop from "./components/ScrollToTop.component";
+  
 // animate on scroll library
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -24,12 +25,18 @@ function App() {
     setData({...data, ...newInput});
   }
 
-  const handleSubmit = (e, clientName, clientEmail, clientMessage) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if(!clientEmail || clientName || clientMessage) {
-      console.log('data is empty')
+
+    if(Object.keys(data).length < 3 || data.clientEmail === '' || data.clientName === '' || data.clientMessage === '') {
+      console.log('show error')      
+      return
     }
-    setData({});
+    if(Object.keys(data).length > 2) {
+      console.log('all completed');
+      setData({});
+      return
+    }
   }
 
   function toggleTheme() {
@@ -43,7 +50,7 @@ function App() {
 
   return (
     <themeContext.Provider value={{toggleTheme, theme}}>
-      <contactFormContext.Provider value={{data, setData, handleChange, handleSubmit}}>
+      <contactFormContext.Provider value={{ data, setData, handleChange, handleSubmit }}>
         <ScrollToTop />
         <Routes>
           <Route path='/' element={<SharedLayout />}>

@@ -50,18 +50,17 @@ const ContactForm = () => {
         className="message-form"
         action="https://formsubmit.co/julianifesiokwu@gmail.com"
         method="POST"
-        onSubmit={handleSubmit}
       >
         <div className="details">
             <input
-              name="Client-name"
+              name="clientName"
               type="text"
               className="client-name"
               placeholder="Name"
               onChange={handleChange}
             />
             <input
-              name="Client-email"
+              name="clientEmail"
               type="email"
               className="client-email"
               placeholder="E-mail"
@@ -71,14 +70,14 @@ const ContactForm = () => {
         <div className="message-container">
           <textarea
             rows='8'
-            name="Client-Message"
+            name="clientMessage"
             id="message-label"
             className="message"
             placeholder="Your message here..."
             onChange={handleChange}
           />
         </div>
-        <button type="submit" className="contact-btn">
+        <button type="submit" className="contact-btn" onSubmit={handleSubmit}>
           Send Mail
         </button>
       </form>
