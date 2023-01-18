@@ -47,14 +47,12 @@ export const projects = [
     name: "My Personal Website",
     technologies: [
       "React",
-      "React Form Hook",
       "React-Router",
       "React-Icons",
-      "Framer Motion",
-      "SASS",
+      "Animate on Scroll"      ,
     ],
     image:
-      "https://github.com/JulianIfesiokwu/Designo-multi-page-website/raw/main/assets/Designo-Website.png",
+      "https://github.com/JulianIfesiokwu/my-personal-portfolio/Portfolio screenshot.png",
     description:
       "Personal portfolio website for a react developer with routing, form validation, light and dark themes.",
     live: "https://audiophile-ecommerce-website-coral.vercel.app/",
