@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from "./header/Header.component";
-import FooterBase from './footerbase/FooterBase.component';
+import Bottom from './bottom/bottom';
 
 import { themeContext } from "../contexts/themeContext";
 
@@ -12,7 +12,7 @@ function PageLayout() {
         <div className={theme ? 'light' : 'dark'}>
             <Header />
             <Outlet />
-            <FooterBase />
+            <Bottom />
         </div>
     )
 };
